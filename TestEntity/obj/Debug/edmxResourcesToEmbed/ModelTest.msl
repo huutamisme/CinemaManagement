@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestEntityModelStoreContainer" CdmEntityContainer="TestEntityEntities">
+    <EntitySetMapping Name="Lops">
+      <EntityTypeMapping TypeName="TestEntityModel.Lop">
+        <MappingFragment StoreEntitySet="Lop">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SinhViens">
+      <EntityTypeMapping TypeName="TestEntityModel.SinhVien">
+        <MappingFragment StoreEntitySet="SinhVien">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IDLop" ColumnName="IDLop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
